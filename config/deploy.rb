@@ -5,7 +5,8 @@ require 'capistrano_colors'
 require "bundler/capistrano"
 
 set :application, "capistrano-sample"
-set :repository,  "git+ssh://localhost/tmp/capistrano-sample"
+#set :repository,  "git+ssh://localhost/tmp/capistrano-sample"
+set :repository,  "git@github.com:katotaku/capistrano-sample.git"
 
 # RVMを利用時の設定
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
